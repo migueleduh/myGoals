@@ -75,7 +75,8 @@ link da modelagem: https://dbdiagram.io/d/6aaad989af7c3b0bd1f96387
 * **Framework Mobile:** [React Native](https://reactnative.dev/) / [Expo](https://expo.dev/)
 * **Estilização:** [NativeWind / Tailwind CSS](https://www.nativewind.dev/) (ou Styled Components)
 * **Navegação:** [React Navigation](https://reactnavigation.org/) (Bottom Tabs)
-* **Persistência de Dados:**
+* **Persistência de Dados:** Supabase
+  
 
   
 
