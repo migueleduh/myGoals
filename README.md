@@ -60,6 +60,14 @@ Aplicação vai utilizar o banco PostgreSQL do Supabase, e o backend vai ser por
 link da modelagem: https://dbdiagram.io/d/6aaad989af7c3b0bd1f96387
 
 
+## Planejamento de sprints
+16/09 a 27/09 cumprir todo o checkpoint 1. 
+28/09 a 05/10 cumprir todo o checkpoint 2.
+06/10 a 18/10 cumprir todo o checkpoint 3.
+19/10 a 31/10 cumprir todo o checkpoint 4.
+
+
+
 
 ## 🛠️ Tecnologias Utilizadas
 
