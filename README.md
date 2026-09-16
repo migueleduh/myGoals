@@ -54,6 +54,11 @@ O myGoal é uma aplicação  mobile que tem o objetivo de ajudar a organizar tar
 - [ ] Produção do vídeo/material de apresentação da disciplina
 
 
+##  🗃️ Modelagem do Banco
+Aplicação vai utilizar o banco PostgreSQL do Supabase, e o backend vai ser por conta do próprio BAAS.
+
+link da modelagem: https://dbdiagram.io/d/6aaad989af7c3b0bd1f96387
+
 
 
 ## 🛠️ Tecnologias Utilizadas
