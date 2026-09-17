@@ -54,6 +54,10 @@ O myGoal é uma aplicação  mobile que tem o objetivo de ajudar a organizar tar
 - [ ] Produção do vídeo/material de apresentação da disciplina
 
 
+##  🖼️ Protótipação de Telas
+Link: https://www.figma.com/make/kLMtydxK1Oze6cvkVd3vKw/Complete-the-task?code-node-id=0-6&p=f&t=XuRgYWmTgv9bf0jO-0&fullscreen=1
+
+
 ##  🗃️ Modelagem do Banco
 Aplicação vai utilizar o banco PostgreSQL do Supabase, e o backend vai ser por conta do próprio BAAS.
 
