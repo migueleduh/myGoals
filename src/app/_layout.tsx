@@ -11,6 +11,7 @@ export default function RootLayout(){
       <Stack.Screen 
         name="Modal"
         options={{ presentation: "modal",
+                   animation: 'slide_from_bottom',
                    title: "Modal",
                    headerShown: false
 
