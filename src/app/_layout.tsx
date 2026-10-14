@@ -10,7 +10,7 @@ export default function RootLayout(){
       {/* Adiciona a o modal a tela */}
       <Stack.Screen 
         name="Modal"
-        options={{ presentation: "modal",
+        options={{ presentation: "transparentModal",
                    animation: 'slide_from_bottom',
                    title: "Modal",
                    headerShown: false
