@@ -21,19 +21,19 @@ O myGoal é uma aplicação  mobile que tem o objetivo de ajudar a organizar tar
 ### 📋 Checklist de Desenvolvimento
 
 #### Checkpoint 1: Setup do Projeto & Layout das Telas (UI Estática)
-- [ ] Inicialização do projeto Expo com TypeScript e Expo Router
-- [ ] Configuração do Tailwind CSS / NativeWind (ou biblioteca de UI escolhida)
-- [ ] Estruturação das pastas do projeto (`app/`, `src/components`, `src/@types`, `src/storage`)
-- [ ] Implementação da navegação.
+- [ x ] Inicialização do projeto Expo com TypeScript e Expo Router
+- [ x ] Configuração do Tailwind CSS / NativeWind (ou biblioteca de UI escolhida)
+- [ X ] Estruturação das pastas do projeto (`app/`, `src/components`, `src/@types`)
+- [ X ] Implementação da navegação.
 - [ ] Construção da interface gráfica da **Tela Hoje** com dados simulados (*mock*)
   - [ ] Cards de hábitos do tipo BUILD (check-list com contador)
   - [ ] Cards de hábitos do tipo QUIT (contador de dias limpo)
 - [ ] Construção da interface gráfica da **Tela Metas**  com dados simulados
   - [ ] Cards de metas com barras de progresso percentual
-- [ ] Modal/Formulário visual para cadastro de novos hábitos e metas
+- [ x ] Modal/Formulário visual para cadastro de novos hábitos e metas
 
 #### Checkpoint 2: Regras de Negócio & Gerenciamento de Estado
-- [ ] Definição completa das interfaces TypeScript (`Habit`, `Goal`, `HabitType`)
+- [ x ] Definição completa das interfaces TypeScript (`Habit`, `Goal`, `HabitType`)
 - [ ] Gerenciamento de estado global/local (React State / Context API / Zustand)
 - [ ] Lógica de **Check-in diário** para hábitos BUILD (incrementar/manter streak)
 - [ ] Lógica de **Reset de recaída** para hábitos QUIT (reiniciar contador de dias limpo)
