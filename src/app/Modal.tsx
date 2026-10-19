@@ -1,36 +1,42 @@
-import {View, Text, StyleSheet,Pressable,TextInput} from "react-native";
+import { View, StyleSheet, Pressable, TextInput } from "react-native";
 import { useRouter } from "expo-router";
-import { SafeAreaView } from 'react-native-safe-area-context';
-import statusBar from "expo-status-bar";
+import { SafeAreaView } from "react-native-safe-area-context";
+import NativeWindText from "../components/NativeWindText";
 
 export default function Modal() {
     const router = useRouter();
 
   return (
     <SafeAreaView style={styles.safeArea }>
-      <View style={styles.container}>
-        <Text style={styles.title}>Criar Novo Registro</Text>
+      <View style={styles.container} className="bg-zinc-900 rounded-tl-3xl rounded-tr-3xl px-7 mt-96 pt-12 gap-4" >
+        <NativeWindText className="font-bold text-white">Criar novo</NativeWindText>
         <View style={styles.form}>
-            <Text style={styles.label}>Título</Text>
-            <TextInput
-              placeholder="Ex: Ler 20 páginas por dia"
-              style={styles.input}
-              placeholderTextColor="#8ca08c"
+            <NativeWindText className="text-neutral-500 pb-2">Título</NativeWindText>
+              <TextInput
+                placeholder="Ex: Ler 20 páginas por dia"
+                className="border border-neutral-500 rounded-lg px-3 py-2 mb-4 placeholder:text-neutral-500 "
             />
 
 
-            <Text style={styles.label}>Categoria</Text>
+            <NativeWindText className="text-neutral-500 pb-2">Categoria</NativeWindText>
             <TextInput
-              placeholder="Ex: Saúde, estudo, finanças"
-              style={styles.input}
-              placeholderTextColor="#8ca08c"
+              placeholder="Ex: Saúde, estudo, finanças" className="border border-neutral-500 rounded-lg px-3 py-2 mb-4 placeholder:text-neutral-500 "
             />
+
+            <NativeWindText className="text-neutral-500 pb-2 ">Tipo</NativeWindText>
           </View>
 
         
         {/* Botão customizado para fechar/desempilhar o modal */}
-        <Pressable style={styles.closeButton} onPress={() => router.back()}>
-          <Text style={styles.closeButtonText}>Cancelar</Text>
+        <Pressable className="bg-emerald-500 px-24 py-2 rounded-lg  "
+            onPress={() => {
+              if (router.canGoBack()) {
+                router.back();
+              } else {
+                router.replace("/");
+              }
+            }}>
+          <NativeWindText className="text-black text-center">Criar Hábito</NativeWindText>
         </Pressable>
       </View>
     </SafeAreaView>
@@ -45,38 +51,9 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-    backgroundColor: 'gray',
-    marginTop: "100%",
-    borderTopStartRadius: 15,
-    borderTopEndRadius: 15,
-    opacity: 0.3,
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-  closeButton: {
-    backgroundColor: '#e74c3c',
-    paddingVertical: 12,
-    paddingHorizontal: 24,
-    borderRadius: 8,
-  },
-  closeButtonText: {
-    color: '#FFF',
-    fontWeight: 'bold',
   },
   form: {
     width: '100%',
     marginBottom: 20,
   },
-  label: {
-    fontSize: 16,
-    fontWeight: 'bold',},
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-  }})    
+  });
