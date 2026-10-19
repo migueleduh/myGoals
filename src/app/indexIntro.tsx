@@ -1,18 +1,23 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {Link} from "expo-router" 
+import NativeWindText from "../components/NativeWindText";
 
 export default function IndexIntro() {
     return (
         <SafeAreaView style={styles.safeArea}>
             <View style={styles.content}>
-                <Text style={styles.eyebrow}>MYGOALS</Text>
+                <NativeWindText className="text-[#B65F48] text-[13px] font-bold">
+                    MYGOALS
+                </NativeWindText>
                 <View style={styles.accent} />
-                <Text style={styles.title}>Bem-vindo ao MyGoals</Text>
-                <Text style={styles.description}>
+                <NativeWindText className="max-w-[340px] text-[#183B33] text-[38px] font-bold leading-[44px]">
+                    Bem-vindo ao MyGoals
+                </NativeWindText>
+                <NativeWindText className="mt-[18px] max-w-[360px] text-[#52645E] text-[17px] leading-[26px]">
                     Suas metas começam com um passo. Defina o que importa e acompanhe seu
                     progresso, um dia de cada vez.
-                </Text>
+                </NativeWindText>
 
                 <Link href={"/Goals"}>Ir para HOme</Link>
             </View>
@@ -30,30 +35,11 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         paddingHorizontal: 28,
     },
-    eyebrow: {
-        color: "#B65F48",
-        fontSize: 13,
-        fontWeight: "700",
-    },
     accent: {
         width: 44,
         height: 4,
         marginTop: 18,
         marginBottom: 22,
         backgroundColor: "#D77B5D",
-    },
-    title: {
-        maxWidth: 340,
-        color: "#183B33",
-        fontSize: 38,
-        fontWeight: "700",
-        lineHeight: 44,
-    },
-    description: {
-        maxWidth: 360,
-        marginTop: 18,
-        color: "#52645E",
-        fontSize: 17,
-        lineHeight: 26,
     },
 });
