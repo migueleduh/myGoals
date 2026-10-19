@@ -1,22 +1,21 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import NativeWindText from '../components/NativeWindText';
 
 export default function GoalsIntro() {
     return (
         <SafeAreaView style={styles.safeArea}>
             <View style={styles.content}>
-                <NativeWindText className="text-[#B65F48] text-[13px] font-bold">
+                <Text className="text-[#B65F48] text-[13px] font-bold">
                     SEU CAMINHO
-                </NativeWindText>
+                </Text>
                 <View style={styles.accent} />
-                <NativeWindText className="text-[#183B33] text-[32px] font-bold leading-[38px]">
+                <Text className="text-[#183B33] text-[32px] font-bold leading-[38px]">
                     Minhas metas
-                </NativeWindText>
-                <NativeWindText className="mt-3 max-w-[360px] text-[#52645E] text-base leading-6">
+                </Text>
+                <Text className="mt-3 max-w-[360px] text-[#52645E] text-base leading-6">
                     Objetivos importantes merecem atenção. Acompanhe aqui cada passo do
                     seu progresso.
-                </NativeWindText>
+                </Text>
             </View>
         </SafeAreaView>
     );

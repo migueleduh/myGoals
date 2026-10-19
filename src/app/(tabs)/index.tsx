@@ -1,12 +1,11 @@
-import { View, StyleSheet } from 'react-native';
-import NativeWindText from '../../components/NativeWindText';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <NativeWindText className="text-lg font-bold">
+    <View style={styles.container} className="">
+      <Text className="text-lg font-bold">
         Tela Home - Hábitos do Dia
-      </NativeWindText>
+      </Text>
     </View>
   );
 }

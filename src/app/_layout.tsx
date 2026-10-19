@@ -1,7 +1,16 @@
 import "../../global.css";
 import { Stack } from "expo-router";
-
+import { useEffect } from "react";
+import { Platform } from "react-native";
+import { NavigationBar } from "expo-navigation-bar";
 export default function RootLayout(){
+
+  useEffect(() => {
+    if (Platform.OS === "android") {
+      NavigationBar.setHidden(true);
+    }
+  }, []);
+
 
   return (
     <Stack>

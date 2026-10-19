@@ -1,12 +1,11 @@
-import { View, StyleSheet } from 'react-native';
-import NativeWindText from '../../components/NativeWindText';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function GoalsScreen() {
   return (
     <View style={styles.container}>
-      <NativeWindText className="text-lg font-bold">
+      <Text className="text-lg font-bold">
         Tela de Metas Futuras
-      </NativeWindText>
+      </Text>
     </View>
   );
 }
