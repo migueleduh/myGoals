@@ -1,8 +1,10 @@
 import { Tabs } from 'expo-router';
 import {router} from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import {useState} from 'react';
 
 export default function TabsLayout() {
+
   return (
     <Tabs
       screenOptions={{
@@ -33,7 +35,7 @@ export default function TabsLayout() {
           title: 'Hoje',
           headerTitle: 'Minha Rotina Diária',
           tabBarIcon: ({ color, size }) => (
-          <Ionicons name="calendar-outline" size={28} color={"#737373"} />
+          <Ionicons name="calendar-outline" size={28} color={color} />
       ),
 
         }} 
@@ -45,7 +47,7 @@ export default function TabsLayout() {
           options={{ 
         title: 'Criar',
         tabBarIcon: ({ color, size }) => (
-          <Ionicons name="add-circle" size={55} color={"#10B981"} />
+          <Ionicons name="add-circle" size={58} color={"#10B981"} />
       ),
         }} 
         listeners={{
@@ -61,10 +63,10 @@ export default function TabsLayout() {
         options={{ 
           title: 'Futuro',
           headerTitle: 'Metas Futuras',
-          tabBarIcon: ({ color, size }) => (
-          <Ionicons name="locate" size={28} color={"#737373"} />
+          tabBarIcon: ({ color, }) => (
+          <Ionicons name="locate" size={28} color={color}  />
       ),
-        }} 
+        }}
       />
 
       
