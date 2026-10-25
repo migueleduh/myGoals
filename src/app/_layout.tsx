@@ -15,7 +15,7 @@ export default function RootLayout(){
   return (
     <Stack>
       {/* Esconde o cabeçalho padrão para o grupo de abas */}
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="(tabs)" options={{ headerShown: false}} />
 
       {/* Adiciona a o modal a tela */}
       <Stack.Screen 

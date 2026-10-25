@@ -4,7 +4,7 @@
     "slug": "my-goals",
     "version": "1.0.0",
     "orientation": "portrait",
-    "scheme":"my-goals",
+    "scheme": "my-goals",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
@@ -25,7 +25,8 @@
     },
     "plugins": [
       "expo-router",
-      "expo-status-bar"
+      "expo-status-bar",
+      "expo-font"
     ]
   }
 }
