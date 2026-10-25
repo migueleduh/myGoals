@@ -23,6 +23,8 @@ O myGoal é uma aplicação  mobile que tem o objetivo de ajudar a organizar tar
 #### Checkpoint 1: Setup do Projeto & Layout das Telas (UI Estática)
 - [x] Inicialização do projeto Expo com TypeScript e Expo Router
 - [x] Configuração do Tailwind CSS / NativeWind (ou biblioteca de UI escolhida)
+- [X] Estruturação das pastas do projeto (`app/`, `src/components`, `src/@types`)
+- [X] Implementação da navegação.
 - [x] Estruturação das pastas do projeto (`app/`, `src/components`, `src/@types`)
 - [x] Implementação da navegação.
 - [x] Construção da interface gráfica da **Tela Hoje** com dados simulados (*mock*)
@@ -80,7 +82,12 @@ link da modelagem: https://dbdiagram.io/d/6aaad989af7c3b0bd1f96387
 * **Estilização:** [NativeWind / Tailwind CSS](https://www.nativewind.dev/) (ou Styled Components)
 * **Navegação:** [React Navigation](https://reactnavigation.org/) (Bottom Tabs)
 * **Persistência de Dados:** Supabase
-  
+
+## Atualizações desde o último checkpoint
+ * Estilizado as telas principais utilizando NativeWind e com a implementação de componentes reutilizaveis.
+ * Dados Mocks inseridos nos conteudos das telas
+ * ajustado Tab de navegação.
+ * estilizado modal, ainda falta um selector, mas a principio o estilo não sera alterado.
 
   
 

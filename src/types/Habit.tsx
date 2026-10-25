@@ -1,4 +1,4 @@
-    export interface Habit{
+    export default interface Habit{
     id: string;               // UUID gerado pelo Supabase
     user_id?: string;         // ID do usuário autenticado
     name: string;

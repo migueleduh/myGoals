@@ -1,4 +1,4 @@
-export interface Goal{
+export default interface Goal{
     id: string;               // UUID gerado pelo Supabase
     user_id?: string;
     name: string;
