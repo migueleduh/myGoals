@@ -25,6 +25,8 @@ O myGoal é uma aplicação  mobile que tem o objetivo de ajudar a organizar tar
 - [x] Configuração do Tailwind CSS / NativeWind (ou biblioteca de UI escolhida)
 - [X] Estruturação das pastas do projeto (`app/`, `src/components`, `src/@types`)
 - [X] Implementação da navegação.
+- [x] Estruturação das pastas do projeto (`app/`, `src/components`, `src/@types`)
+- [x] Implementação da navegação.
 - [x] Construção da interface gráfica da **Tela Hoje** com dados simulados (*mock*)
   - [x] Cards de hábitos do tipo BUILD (check-list com contador)
   - [x] Cards de hábitos do tipo QUIT (contador de dias limpo)
@@ -36,7 +38,7 @@ O myGoal é uma aplicação  mobile que tem o objetivo de ajudar a organizar tar
 - [x] Definição completa das interfaces TypeScript (`Habit`, `Goal`, `HabitType`)
 - [ ] Gerenciamento de estado global/local (React State / Context API / Zustand)
 - [ ] Lógica de **Check-in diário** para hábitos BUILD (incrementar/manter streak)
-- [ ] Lógica de **Reset de recaída** para hábitos QUIT (reiniciar contador de dias limpo)
+- [x] Lógica de **Reset de recaída** para hábitos QUIT (reiniciar contador de dias limpo)
 - [ ] Lógica de **Atualização de progresso** das Metas (0 a 100%)
 - [ ] Algoritmo de cálculo de diferença de dias com base nas datas de check-in (`lastCheckedDate`)
 
