@@ -21,19 +21,19 @@ O myGoal é uma aplicação  mobile que tem o objetivo de ajudar a organizar tar
 ### 📋 Checklist de Desenvolvimento
 
 #### Checkpoint 1: Setup do Projeto & Layout das Telas (UI Estática)
-- [ x ] Inicialização do projeto Expo com TypeScript e Expo Router
-- [ x ] Configuração do Tailwind CSS / NativeWind (ou biblioteca de UI escolhida)
-- [ X ] Estruturação das pastas do projeto (`app/`, `src/components`, `src/@types`)
-- [ X ] Implementação da navegação.
-- [ ] Construção da interface gráfica da **Tela Hoje** com dados simulados (*mock*)
-  - [ ] Cards de hábitos do tipo BUILD (check-list com contador)
-  - [ ] Cards de hábitos do tipo QUIT (contador de dias limpo)
-- [ ] Construção da interface gráfica da **Tela Metas**  com dados simulados
-  - [ ] Cards de metas com barras de progresso percentual
-- [ x ] Modal/Formulário visual para cadastro de novos hábitos e metas
+- [x] Inicialização do projeto Expo com TypeScript e Expo Router
+- [x] Configuração do Tailwind CSS / NativeWind (ou biblioteca de UI escolhida)
+- [X] Estruturação das pastas do projeto (`app/`, `src/components`, `src/@types`)
+- [X] Implementação da navegação.
+- [x] Construção da interface gráfica da **Tela Hoje** com dados simulados (*mock*)
+  - [x] Cards de hábitos do tipo BUILD (check-list com contador)
+  - [x] Cards de hábitos do tipo QUIT (contador de dias limpo)
+- [x] Construção da interface gráfica da **Tela Metas**  com dados simulados
+  - [x] Cards de metas com barras de progresso percentual
+- [x] Modal/Formulário visual para cadastro de novos hábitos e metas
 
 #### Checkpoint 2: Regras de Negócio & Gerenciamento de Estado
-- [ x ] Definição completa das interfaces TypeScript (`Habit`, `Goal`, `HabitType`)
+- [x] Definição completa das interfaces TypeScript (`Habit`, `Goal`, `HabitType`)
 - [ ] Gerenciamento de estado global/local (React State / Context API / Zustand)
 - [ ] Lógica de **Check-in diário** para hábitos BUILD (incrementar/manter streak)
 - [ ] Lógica de **Reset de recaída** para hábitos QUIT (reiniciar contador de dias limpo)
@@ -80,7 +80,12 @@ link da modelagem: https://dbdiagram.io/d/6aaad989af7c3b0bd1f96387
 * **Estilização:** [NativeWind / Tailwind CSS](https://www.nativewind.dev/) (ou Styled Components)
 * **Navegação:** [React Navigation](https://reactnavigation.org/) (Bottom Tabs)
 * **Persistência de Dados:** Supabase
-  
+
+## Atualizações desde o último checkpoint
+ * Estilizado as telas principais utilizando NativeWind e com a implementação de componentes reutilizaveis.
+ * Dados Mocks inseridos nos conteudos das telas
+ * ajustado Tab de navegação.
+ * estilizado modal, ainda falta um selector, mas a principio o estilo não sera alterado.
 
   
 
